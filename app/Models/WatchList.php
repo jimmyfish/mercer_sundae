@@ -16,6 +16,6 @@ class WatchList extends Model
 
     public function pair()
     {
-        return $this->hasOne(Pair::class);
+        return $this->hasOne(Pair::class, 'id', 'pair_id');
     }
 }
